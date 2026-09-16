@@ -46,7 +46,7 @@
 
   <div class="panel">
     <div class="section-title">CIPHER</div>
-    <div class="cipher" id="cipher">YMNX NX STY YMJ WJWFQ FSXWJW. KTWYJ YJQJWJ NX YTZW QJNX.</div>
+    <div class="cipher" id="cipher">Mrq qeb zobxqlo kxjb.</div>
 
     <div class="section-title">DECIPHER</div>
     <p>Something is hiding in plain sight. Decode the message, then enter the hidden answer below.</p>
@@ -64,12 +64,12 @@
 </div>
 
 <script>
-  // The visible cipher uses a Caesar shift of +5.
-  // Decoding it gives: "THIS IS NOT THE REAL ANSWER. FORTE TELERE IS TOUR LEIS."
+  // The visible cipher uses a Caesar shift of +3.
+  // Decoding it gives: "Put the creators name."
   // The actual puzzle answer is hidden in the repeated pattern:
   // Take every 5th character of the raw cipher (letters only), then Caesar-decode.
-  const raw = "YMNXNXSTTYMJWTWFQFSXWJWKTWYJYJQJWJNXTYWQJNX";
-  const shift = 5;
+  const raw = "Mrq qeb zobxqlo kxjb";
+  const shift = 3;
 
   function caesar(s, n) {
     return s.replace(/[A-Z]/g, c =>
@@ -77,7 +77,7 @@
     );
   }
 
-  // Actual intended answer: "WASTED"
+  // Actual intended answer: "CJ"
   const accepted = ["wasted"];
 
   function check() {
